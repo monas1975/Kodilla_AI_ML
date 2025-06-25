@@ -1,3 +1,5 @@
+print("to sa zmiany w branch - test")
+
 weekdays = ["pon", "wto", "śro", "czw", "pią", "sob", "nie"]
 
 print(weekdays[0:2])
