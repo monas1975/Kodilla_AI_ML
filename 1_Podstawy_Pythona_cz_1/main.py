@@ -1,4 +1,5 @@
-
+# to sa zmiany
+print("to sa zmiany na potrzeby commitu i uczenia sie githuba")
 salads = {
     "owocowa": ["ananas", "truskawka", "jagody"],
     "moja_buraczana": ["buraki", "ser kozi", "rukola"],
