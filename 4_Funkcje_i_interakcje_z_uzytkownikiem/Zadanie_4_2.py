@@ -1,4 +1,6 @@
+# Zadanie 4_2 palindomy
 
+# definicja funkcji
 def palindroms(word):
     """
     Check if the string passed as parametr is a palindrom.
@@ -20,9 +22,9 @@ def palindroms(word):
 word ="Potop"
 print("Cze slowo " + word + " jest palindromem True / False : " + str(palindroms(word)))
 
-#string3 = "Andrzej"
-#print(string3[0])
-#print(string3[len(string3)-1])
+word ="kajak"
+print("Cze slowo " + word + " jest palindromem True / False : " + str(palindroms(word)))
 
-#('tomek' == 'anka')
-#print('tomek' == 'tomek')
+word ="drzewo"
+print("Cze slowo " + word + " jest palindromem True / False : " + str(palindroms(word)))
+
