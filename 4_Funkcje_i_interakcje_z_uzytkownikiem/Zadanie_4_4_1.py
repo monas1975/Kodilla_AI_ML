@@ -1,6 +1,7 @@
 import sys
 import logging
 
+# deklaracje zmiennych 
 numbers =[]
 a=0
 b=0
@@ -9,6 +10,14 @@ b=0
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s')
 
 def is_float(s):
+    """_summary_
+     funkction checking if string represent float value
+    Args:
+        strings
+
+    Returns:
+        _boolean value True or False
+    """  
     try:
         float(s)
         return True
@@ -16,6 +25,14 @@ def is_float(s):
         return False
 
 def is_int(s):
+    """
+    funkction checking if string represent integer value
+    Args:
+        string
+
+    Returns:
+        boelan value True or False
+    """
     try:
         int(s)
         return True
@@ -24,9 +41,14 @@ def is_int(s):
 
 
 def math_calculation(operation_type, numbers):
-    #print("jestem w fumlcji 1")
-    #print(type(math_operation))
-    #print(operation_type)
+    """
+     Function calulate the value depend on the type of operation inserted by user,
+     1 Add, 2 subtraction, 3 multiplication, 4 division
+    Args:
+    
+        operation_type - string ()
+        numbers - list of values (float)
+    """
     text=""
     calculation_type= operation_type
     result=0
@@ -76,7 +98,7 @@ def math_calculation(operation_type, numbers):
 
 
 
-
+## main part of program; entering values
 
 if __name__ == "__main__":
     print("Aby wyjsc z trybu wprowadzanie liczb, wcisnij dowolna litere")
@@ -107,6 +129,7 @@ if __name__ == "__main__":
         logging.info("nie ma takiego działania")
         exit(1)
 
+# result presentation
 print(math_operation)
 print("-------------------")
 math_calculation(math_operation, numbers)
