@@ -9,6 +9,9 @@ class BaseContact:
             self.second_name = second_name
             self.phone = phone
             self.email = email
+      @property
+      def label_lenght(self):
+           return (len(self.first_name) + len(self.second_name))
       def __str__(self):
            return f'{self.first_name} {self.second_name} {self.phone} {self.email}'
       def contact(self):
@@ -88,3 +91,20 @@ print("-------------------------------------------------------------------------
 
 for i in range(0, len(business_cards)):
     print(business_cards[i])
+
+print("-------------------------------------------------------------------------------------------------")
+print("-------------------------------------------------------------------------------------------------")
+print("Funkcja dynamiczna zwracająca dłogoś imienia i nazwisko dla base cards")
+
+for i in range(0, len(base_cards)):
+    print(base_cards[i].first_name + " " + base_cards[i].second_name + " -długość imienia i nazwiska: " + str(base_cards[i].label_lenght))
+    
+
+
+print("-------------------------------------------------------------------------------------------------")
+print("-------------------------------------------------------------------------------------------------")
+print("Funkcja dynamiczna zwracająca dłogoś imienia i nazwisko dla bysines cards")
+
+
+for i in range(0, len(business_cards)):
+    print(business_cards[i].first_name + " " + business_cards[i].second_name + " -długość imienia i nazwiska: " + str(business_cards[i].label_lenght))
