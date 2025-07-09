@@ -169,18 +169,22 @@ list_of_movies_series=[]
 list_of_movies_series.extend(series)
 
 movie1 = Movie(title="Jurasic Park. Odrodzenia",year = 2025, movie_genre="Sci-Fi")
+list_of_movies_series.append(movie1)
 series=[]
 series = add_tvseries_to_lib("Star Gate",1997,"Sci-Fi",22,2 )
 list_of_movies_series.extend(series)
 
 
 movie2 =  Movie(title="Star Wars New Hope",year = 1977, movie_genre="Sci-Fi")
+list_of_movies_series.append(movie2)
 movie3 =  Movie(title="Star Wars The Empire Strikes Back",year = 1980, movie_genre="Sci-Fi")
+list_of_movies_series.append(movie3)
 series=[]
 series = add_tvseries_to_lib("Andor",2023,"Sci-Fi",12,1 )
 list_of_movies_series.extend(series)
 movie4 =   Movie(title="Star Wars Return of the Jedi",year = 1983, movie_genre="Sci-Fi")
-series = add_tvseries_to_lib("Andor",2025,"Sci-Fi",12,12)
+list_of_movies_series.append(movie4)
+series = add_tvseries_to_lib("Andor",2025,"Sci-Fi",12,2)
 list_of_movies_series.extend(series)
 
 # generowanie ilosci odtworzen
@@ -199,72 +203,4 @@ for item in result:
    # if ("TvSeries" in str(type(item)))
    # print(item.title + " " + str(item._number_of_plays))
 
-"""
-    print(str(movie1.number_of_plays))
-movie1.play()
-movie1.play()
-print(str(movie1.number_of_plays))
-#print(str(tvserie1.number_of_plays))
-#tvserie1.play()
-#tvserie1.play()
-#tvserie1.play()
-#tvserie1.play()
-#print(str(tvserie1.number_of_plays))
-
-print("--------------------------------------")
-list_of_movies_series.append(movie1)
-#list_of_movies_series.append(tvserie1)
-#list_of_movies_series.append(tvserie2)
-#list_of_movies_series.append(tvserie3)
-list_of_movies_series.append(movie2)
-list_of_movies_series.append(movie3)
-#list_of_movies_series.append(tvserie4)
-#list_of_movies_series.append(tvserie5)
-#list_of_movies_series.append(tvserie6)
-#list_of_movies_series.append(movie4)
-#list_of_movies_series.append(movie5)
-
-
-
-for item in list_of_movies_series:
-    print(item)
-
-print("++++-----------------------------------------------")
-list_of_movies = get_movies(list_of_movies_series)
-for item in list_of_movies:
-   print(item)
-
-print("===================================================")
-list_of_series = get_series(list_of_movies_series)
-for item in list_of_series:
-    print(item)
-
-print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
-search(list_of_movies_series,"Andor")
-search(list_of_movies_series,"Star Gate")
-
-print("--------------------------")
-generate_views_in_lib(list_of_movies_series,10)
-
-for item in list_of_movies_series:
-    print(item.title + " " + str(item._number_of_plays))
-    
-print("------------------------------------------------------")
-print(" TOP MOVIES & SEIRIES")
-
-result = top_movies(list_of_movies_series,3)
-for item in result:
-    print(item.title + " " + str(item._number_of_plays))
-
-for item in list_of_movies_series:
-    print(item)
-   
-print(len(list_of_movies_series)) 
-
-#for item in series:
-    #print(item)
-    
-    
-    
-    """
 
