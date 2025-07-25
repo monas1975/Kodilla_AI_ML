@@ -5,6 +5,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.dialects import sqlite
 from sqlalchemy import BigInteger
 
+
 #BIGINT = BIGINT().with_variant(sqlite.INTEGER, "sqlite")
 engine = create_engine('sqlite:///Zadanie_6_3_1.db', echo=True)
 meta = MetaData()
