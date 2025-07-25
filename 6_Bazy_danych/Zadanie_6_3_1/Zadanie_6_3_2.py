@@ -4,6 +4,7 @@ from sqlalchemy import Table, Column, Integer, String,Float, MetaData,insert, up
 from sqlalchemy import create_engine, text
 from Zadanie_6_3_1 import engine, clean_station
 from sqlalchemy.orm import Session
+from pathlib import Path
 
 
 def insert_dic_to_table(dic):
@@ -39,18 +40,26 @@ def csv_to_list_of_dic(file):
 
 if __name__== '__main__':
 
-    file_1 = 'D:\\Kodilla_AI_ML\\6_Bazy_danych\\Zadanie_6_3_1\\clean_measure.csv'
-    file_2 = 'D:\\Kodilla_AI_ML\\6_Bazy_danych\\Zadanie_6_3_1\\clean_stations.csv'
+    #file_1 = 'D:\\Kodilla_AI_ML\\6_Bazy_danych\\Zadanie_6_3_1\\clean_measure.csv'
+    #file_2 = 'D:\\Kodilla_AI_ML\\6_Bazy_danych\\Zadanie_6_3_1\\clean_stations.csv'
+    #file_1 = '.\clean_measure.csv'
+    #file_2 = '.\clean_stations.csv'
+
+    
+    BASE_DIR = Path(__file__).resolve().parent
+    file_1 = BASE_DIR/'clean_measure.csv'
+    file_2 = BASE_DIR/'clean_stations.csv'
+    
 
     # wprowadzanie danych
     print("wprowadzanie danych")
     dic1 = csv_to_list_of_dic(file_1)
-   # insert_dic_to_table(dic1)
+    insert_dic_to_table(dic1)
 
      #  update rekordów
     print("update danych")
     dic2 = csv_to_list_of_dic(file_2)
-   # update_table(dic2)
+    update_table(dic2)
 
     #select
     # conn.execute("SELECT * FROM stations LIMIT 5").fetchall()
