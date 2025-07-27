@@ -15,5 +15,15 @@ cheesePrice7 = 14
 cheeseName8 = "czechosłowacki ser z owczego mleka"
 cheesePrice8 = 122.33
 
-cheeseReport = f"Lista dostepnych serów i ich ceny: {cheeseName1} - {cheesePrice1} zł,  {cheeseName2} - {cheesePrice2} zł,  {cheeseName3} - {cheesePrice3} zł, {cheeseName4} - {cheesePrice4} zł,  {cheeseName5} - {cheesePrice5} zł,  {cheeseName6} - {cheesePrice6} zł,  {cheeseName7} - {cheesePrice7} zł,  {cheeseName8} - {cheesePrice8} zł" 
+cheeseReport = f"""Lista dostepnych serów i ich ceny: 
+                   {cheeseName1} - {cheesePrice1} zł,
+                   {cheeseName2} - {cheesePrice2} zł, 
+                   {cheeseName3} - {cheesePrice3} zł,
+                   {cheeseName4} - {cheesePrice4} zł, 
+                   {cheeseName5} - {cheesePrice5} zł, 
+                   {cheeseName6} - {cheesePrice6} zł, 
+                   {cheeseName7} - {cheesePrice7} zł, 
+                   {cheeseName8} - {cheesePrice8} zł
+                   """
+
 print(cheeseReport)
