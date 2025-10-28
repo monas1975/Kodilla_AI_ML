@@ -89,7 +89,7 @@ merged_df = db_obj.merge()
 # Konfiguracja Dash
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-USERNAME_PASSWORD = [['tomek','tomek']]
+USERNAME_PASSWORD = [['user','123456789']]
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
 auth = dash_auth.BasicAuth(app, USERNAME_PASSWORD)
